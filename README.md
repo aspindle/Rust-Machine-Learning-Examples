@@ -16,4 +16,4 @@ This visualization was inspired by Nikita Lisitsa's work that can be found [here
 
 
 ### To be noted:
-Regarding the MNIST dataset, the Kaggle links above are what I used in my project. However the author of the MNIST dataset, Yann Lecun also has it available [here](https://huggingface.co/datasets/ylecun/mnist) despite them having some not-so-great political opinions. 
+Regarding the MNIST dataset, the Kaggle links above are what I used in my project. However the author of the MNIST dataset, Yann Lecun also has it available [here](https://huggingface.co/datasets/ylecun/mnist). 
