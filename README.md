@@ -1,5 +1,5 @@
 # Rust-Machine-Learning-Examples
-A few Rust examples from studying the Machine Learning Fundamentals course taught by Sanjoy Dasgupta (UCSD). Not homework, just a personal project. AI was utilized in making these. 
+A few Rust examples from studying the [Machine Learning Fundamentals](https://cseweb.ucsd.edu/~dasgupta/151/schedule.html) course taught by Sanjoy Dasgupta (UCSD). Not homework, just a personal project. AI was utilized in making these. 
 
 ## 1-nn
 A 1 nearest neighbor implementation on the [MNIST Dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset). Using Euclidean distance, find the closest training image to classify a new image from the test set. Error rate is 3.09% as shown in the course.
