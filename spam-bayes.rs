@@ -68,7 +68,7 @@ fn main() -> Result<(), Box<dyn Error>> {
     */
 
     // Change this to any new email you want to classify:
-    let test_email = "Congratulations! You have won free money. Click here to claim your prize!";
+    let test_email = "Concerning the last meeting, I have some free time to discuss the project. Let's schedule a call.";
 
     let prediction = classify_email(test_email, &model);
 
@@ -130,7 +130,7 @@ fn main() -> Result<(), Box<dyn Error>> {
 fn load_emails() -> Result<Vec<Email>, Box<dyn Error>> {
 
     let mut reader = csv::Reader::from_path(
-        "../../../enron/enron_spam_data.csv"
+        "../../enron/enron_spam_data.csv"
     )?;
 
     let headers = reader.headers()?.clone();
@@ -353,7 +353,7 @@ fn classify_email(
         let ham_probability =
             model.ham_word_probabilities.get(word).unwrap_or(&0.0);
 
-        // Add log probabilities to our scores
+        // Add log probabilities to our scores by dereferencing the probabilities
         if *spam_probability > 0.0 {
             spam_score += spam_probability.ln();
         }
@@ -362,6 +362,20 @@ fn classify_email(
             ham_score += ham_probability.ln();
         }
     }
+
+    // Convert log scores back into regular probabilities
+    let spam_probability = spam_score.exp();
+    let ham_probability = ham_score.exp();
+
+    // Normalize probabilities so they add up to 1.0
+    let total_probability = spam_probability + ham_probability;
+
+    let spam_probability = spam_probability / total_probability;
+    let ham_probability = ham_probability / total_probability;
+
+    // Print probabilities
+    println!("Spam probability: {:.2}%", spam_probability * 100.0);
+    println!("Ham probability: {:.2}%", ham_probability * 100.0);
 
     // Compare the scores
     if spam_score > ham_score {
