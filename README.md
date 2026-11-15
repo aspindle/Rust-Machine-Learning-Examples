@@ -10,10 +10,17 @@ A k nearest neighbor implementation on the [MNIST Dataset](https://www.kaggle.co
 ## Spam-bayes
 I thought it would be fun to use the [ENRON dataset](https://github.com/MWiechmann/enron_spam_data) and Bayes theorem to predict whether an email is spam or legitimate (ham). This is done by first calculating the prior probabilities then the word probabilities; apply Bayes's theorem by combining the prior and word probabilities, and finally making a prediction based on the result.
 
+## Spam-perceptron
+#todo
+
 ## Linear Regression Visualization
-This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to only have it show linear regression instead of logistic regression. The plan is to remake the logistic regression in Rust as well. #todo
+This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to only have it show linear regression instead of logistic regression.  
 
+## Logistic Regression Visualization
+#todo
 
+## Covariance Matrix
+#todo
 
 ### To be noted:
 Regarding the MNIST dataset, the Kaggle links above are what I used in my project. However the author of the MNIST dataset, Yann Lecun also has it available [here](https://huggingface.co/datasets/ylecun/mnist). 
