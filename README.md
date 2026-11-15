@@ -10,6 +10,9 @@ A k nearest neighbor implementation on the [MNIST Dataset](https://www.kaggle.co
 ## Spam-bayes
 I thought it would be fun to use the [ENRON dataset](https://github.com/MWiechmann/enron_spam_data) and Bayes theorem to predict whether an email is spam or legitimate (ham). This is done by first calculating the prior probabilities then the word probabilities; apply Bayes's theorem by combining the prior and word probabilities, and finally making a prediction based on the result.
 
+<img width="589" height="160" alt="2" src="https://github.com/user-attachments/assets/73ab5380-5662-4d9f-8793-24bc169734fd" />
+
+
 ## Spam-perceptron
 #todo
 
