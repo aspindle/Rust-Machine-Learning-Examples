@@ -14,7 +14,10 @@ I thought it would be fun to use the [ENRON dataset](https://github.com/MWiechma
 #todo
 
 ## Linear Regression Visualization
-This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to only have it show linear regression instead of logistic regression.  
+This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to only have it show linear regression instead of logistic regression. Here is what it should look like with some example points and the generated linear regression line:  
+
+<img width="585" height="438" alt="1" src="https://github.com/user-attachments/assets/a2c96fcb-836a-4a4f-a687-321892cbb3ba" />
+
 
 ## Logistic Regression Visualization
 #todo
