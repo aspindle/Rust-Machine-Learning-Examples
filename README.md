@@ -1,4 +1,4 @@
-# Rust-Machine-Learning-Examples
+# Rust Machine Learning Examples
 A few Rust examples from studying the [Machine Learning Fundamentals](https://cseweb.ucsd.edu/~dasgupta/151/schedule.html) course taught by Sanjoy Dasgupta (UCSD). Not homework, just a personal project. AI was utilized in making these. 
 
 ## 1-nn
@@ -14,7 +14,7 @@ I thought it would be fun to use the [ENRON dataset](https://github.com/MWiechma
 
 
 ## Spam-perceptron
-#todo
+In this one we use the [ENRON dataset](https://github.com/MWiechmann/enron_spam_data) and build a Perceptron to classify a new email as spam or legitimate (ham). The perceptron learns which words are associated with spam and which are associated with legitimate emails. It does this by building a vocabulary, initializing weights and biases, making predictions, adjusting from errors, and repeating the process over 10  epochs (one epoch is one pass through the dataset).
 
 ## Linear Regression Visualization
 This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to only have it show linear regression instead of logistic regression. Here is what it should look like with some example points and the generated linear regression line:  
