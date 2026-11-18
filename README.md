@@ -1,5 +1,5 @@
 # Rust Machine Learning Examples
-A few Rust examples from studying the [Machine Learning Fundamentals](https://cseweb.ucsd.edu/~dasgupta/151/schedule.html) course taught by Sanjoy Dasgupta (UCSD). Not homework, just a personal project. AI was utilized in making these. To run these on your own you will probably need to add some dependencies to your .toml files. 
+A few Rust examples from studying the [Machine Learning Fundamentals](https://cseweb.ucsd.edu/~dasgupta/151/schedule.html) course taught by Sanjoy Dasgupta (UCSD). Not homework, just a personal project. AI was utilized in making these. To run these on your own you will probably need to add some dependencies to your Carrgo.toml files. 
 
 ## 1-nn
 A 1 nearest neighbor implementation on the [MNIST Dataset](https://www.kaggle.com/datasets/hojjatk/mnist-dataset). Using Euclidean distance, find the closest training image to classify a new image from the test set. Error rate is 3.09% as shown in the course.
@@ -37,4 +37,4 @@ This visualization was inspired by Nikita Lisitsa's work that can be found [here
 #todo
 
 ### To be noted:
-Regarding the MNIST dataset, the Kaggle links above are what I used in my project. However the author of the MNIST dataset, Yann Lecun also has it available [here](https://huggingface.co/datasets/ylecun/mnist). 
+Regarding the MNIST dataset, the Kaggle links above are what I used in my project. However the author of the MNIST dataset, Yann Lecun, also has it available [here](https://huggingface.co/datasets/ylecun/mnist). 
