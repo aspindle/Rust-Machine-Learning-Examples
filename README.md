@@ -21,6 +21,11 @@ This visualization was inspired by Nikita Lisitsa's work that can be found [here
 
 <img width="585" height="438" alt="1" src="https://github.com/user-attachments/assets/a2c96fcb-836a-4a4f-a687-321892cbb3ba" />
 
+## Winery Gaussian Model
+In this one we recreate the Professor's explanation of the [Wine Dataset](https://archive.ics.uci.edu/dataset/109/wine). Since we don't know the exact split used by Professor Dasgupta, we will just take the non-randomized first n wines for the training and test sets. We know the training set should add up to 130 and the test set should add up to 48. This yielded results similar to the Professor's. As can be seen, mine is on the left, and the professor's is on the right. The Winery 1 Alcohol Statistics I got were a Mean μ of 13.74 and Variance σ² of 0.22.
+
+<img width="900" height="580" alt="wines" src="https://github.com/user-attachments/assets/45025e92-ae11-43d0-95bc-b0c7b01a9cb9" />
+
 
 ## Logistic Regression Visualization
 #todo
