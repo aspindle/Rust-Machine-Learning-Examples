@@ -28,7 +28,10 @@ In this one we recreate the Professor's explanation of the [Wine Dataset](https:
 
 
 ## Logistic Regression Visualization
-#todo
+This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to better understand Logistic Regression. Here is what the program looks like when it runs: 
+
+<img width="798" height="557" alt="logreg" src="https://github.com/user-attachments/assets/4030abbf-55cb-4df6-9569-e5abab8002fe" />
+
 
 ## Covariance Matrix
 #todo
