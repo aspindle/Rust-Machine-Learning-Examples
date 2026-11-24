@@ -31,6 +31,8 @@ In this model, we plot the points of the [Wine Dataset](https://archive.ics.uci.
 
 <img width="1037" height="625" alt="3" src="https://github.com/user-attachments/assets/f2cc0722-50cc-491a-bbc9-3c78cf96defe" />
 
+## Wine Multivariate Gaussian 
+With the [Wine Dataset](https://archive.ics.uci.edu/dataset/109/wine) again, we calculate a 13 dimensional multivariate Gaussian distribution in order to predict the test set from our training set. Out of the 48 wines in the test set, this method got one of them incorrect which makes the error rate 2.08%. The professor got an error rate of 0%. This discrepancy might be due to the fact that I am using log probabilities but it is still fairly close. 
 
 ## Logistic Regression Visualization
 This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to better understand Logistic Regression. Here is what the program looks like when it runs: 
