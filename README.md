@@ -26,6 +26,11 @@ In this one we recreate the Professor's explanation of the [Wine Dataset](https:
 
 <img width="900" height="580" alt="wines" src="https://github.com/user-attachments/assets/45025e92-ae11-43d0-95bc-b0c7b01a9cb9" />
 
+## Wine 2D Gaussian
+In this model, we plot the points of the [Wine Dataset](https://archive.ics.uci.edu/dataset/109/wine) only using two features, Alcohol and Flavanoids. The plots don't look identical because we still don't know the exact training/test split used by the Professor. However, the results are fairly similar and show the separation between features. Additionally, we calculate the bivariate Gaussians for each of the classes of training points, which means calculating the means and covariance matrix for each. The 2.447 represents a 95% probability contour for the ellipse.   
+
+<img width="1037" height="625" alt="3" src="https://github.com/user-attachments/assets/f2cc0722-50cc-491a-bbc9-3c78cf96defe" />
+
 
 ## Logistic Regression Visualization
 This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to better understand Logistic Regression. Here is what the program looks like when it runs: 
