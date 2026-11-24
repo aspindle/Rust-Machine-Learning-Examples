@@ -12,14 +12,8 @@ I thought it would be fun to use the [ENRON dataset](https://github.com/MWiechma
 
 <img width="589" height="160" alt="2" src="https://github.com/user-attachments/assets/73ab5380-5662-4d9f-8793-24bc169734fd" />
 
-
 ## Spam-perceptron
 In this one we use the [ENRON dataset](https://github.com/MWiechmann/enron_spam_data) and build a Perceptron to classify a new email as spam or legitimate (ham). The perceptron learns which words are associated with spam and which are associated with legitimate emails. It does this by building a vocabulary, initializing weights and biases, making predictions, adjusting from errors, and repeating the process over 10  epochs (one epoch is one pass through the dataset).
-
-## Linear Regression Visualization
-This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to have it show linear regression instead of logistic regression. Here is what it should look like with some example points and the generated linear regression line:  
-
-<img width="585" height="438" alt="1" src="https://github.com/user-attachments/assets/a2c96fcb-836a-4a4f-a687-321892cbb3ba" />
 
 ## Wine Gaussian Model
 In this one we recreate the Professor's explanation of the [Wine Dataset](https://archive.ics.uci.edu/dataset/109/wine). Since we don't know the exact split used by Professor Dasgupta, we will just take the non-randomized first n wines for the training and test sets. We know the training set should add up to 130 and the test set should add up to 48. This yielded results similar to the Professor's. As can be seen, mine is on the left, and the professor's is on the right. The Winery 1 Alcohol Statistics I got were a Mean μ of 13.74 and Variance σ² of 0.22.
@@ -29,10 +23,22 @@ In this one we recreate the Professor's explanation of the [Wine Dataset](https:
 ## Wine 2D Gaussian
 In this model, we plot the points of the [Wine Dataset](https://archive.ics.uci.edu/dataset/109/wine) only using two features, Alcohol and Flavanoids. The plots don't look identical because we still don't know the exact training/test split used by the Professor. However, the results are fairly similar and show the separation between features. Additionally, we calculate the bivariate Gaussians for each of the classes of training points, which means calculating the means and covariance matrix for each. The 2.447 represents a 95% probability contour for the ellipse.   
 
-<img width="1037" height="625" alt="3" src="https://github.com/user-attachments/assets/f2cc0722-50cc-491a-bbc9-3c78cf96defe" />
+<img width="1000" height="600" alt="3" src="https://github.com/user-attachments/assets/f2cc0722-50cc-491a-bbc9-3c78cf96defe" />
+
+## Wine 2D Gaussian - decision boundary 
+I didn't quite understand how we went from our bivariate Gaussian to a decision boundary with the [Wine Dataset](https://archive.ics.uci.edu/dataset/109/wine). Basically we call the get_decision_boundary function which samples the graph on a grid, calculates the difference between two class scores, and looks for places where that difference changes sign. This generates the decision boundary that we can then plot.
+
+<img width="1000" height="600" alt="decision_boundary" src="https://github.com/user-attachments/assets/59eab5a3-66a2-4392-ab35-dbea84488450" />
+
 
 ## Wine Multivariate Gaussian 
 With the [Wine Dataset](https://archive.ics.uci.edu/dataset/109/wine) again, we calculate a 13 dimensional multivariate Gaussian distribution in order to predict the test set from our training set. Out of the 48 wines in the test set, this method got one of them incorrect which makes the error rate 2.08%. The professor got an error rate of 0%. This discrepancy might be due to the fact that I am using log probabilities but it is still fairly close. 
+
+## Linear Regression Visualization
+This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to have it show linear regression instead of logistic regression. Here is what it should look like with some example points and the generated linear regression line:  
+
+<img width="585" height="438" alt="1" src="https://github.com/user-attachments/assets/a2c96fcb-836a-4a4f-a687-321892cbb3ba" />
+
 
 ## Logistic Regression Visualization
 This visualization was inspired by Nikita Lisitsa's work that can be found [here](https://lisyarus.github.io/webgl/classification.html). The idea was to better understand Logistic Regression. Here is what the program looks like when it runs: 
